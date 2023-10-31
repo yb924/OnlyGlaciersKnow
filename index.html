@@ -4,56 +4,57 @@
   <meta charset="utf-8">
   <title>Only Glaciers Know</title>
 </head>
-<body>
+<body style="background-image:url('image-resources/ogk-bg-color.png');">
   <div class="bg">
-    <img src="image-resources/ogk-bg-color.png" alt=""class="responsive">
+    <!-- <img src="image-resources/ogk-bg-color.png" alt=""class="responsive"> -->
+
+
+
+    <div class="introT">
+      <p>This soundwalk is meant to be experiened while walking along Iceland coastline--preferably a non-touristy one. </p>
+      <br>
+      <p>Press &nbsp<img width="30" src="image-resources/on.png" alt=""> in each section to start audio.</p>
+      <br>
+      <p>Please wear headphones.</p>
+    </div>
+
+
+    <div class="credit">
+      <p>Created By: Yanran Bi</p>
+      <br><br><br>
+      <p>In Collaboration With:</p>
+      <p> <a href="https://wf.is/">Worldwide Friends</a></p>
+      <br><br><br>
+      <p>Spacial Thanks:</p>
+      <p>Yiming Huang</p>
+      <p><a href="https://yangqideng.com/">Yangqi Deng</a></p>
+    </div>
+
+    <!-- 1 -->
+    <img width=""id="img00" src="image-resources/on.png" alt="" onclick="playMusic0()" >
+
+    <audio id="audio00"src="audio-resources/section1_water.mp3"></audio>
+
+
+    <!-- 2 -->
+    <img width=""id="img01" src="image-resources/on.png" alt="" onclick="playMusic1()" >
+
+    <audio id="audio01"src="audio-resources/section2_the_hearts.mp3"></audio>
+
+
+    <!-- 3 -->
+    <img width=""id="img02" src="image-resources/on.png" alt="" onclick="playMusic2()" >
+
+    <audio id="audio02"src="audio-resources/section3_ran_of_the_past.mp3"></audio>
+
+
+
+    <!-- 4 -->
+    <img width=""id="img03" src="image-resources/on.png" alt="" onclick="playMusic3()" >
+
+    <audio id="audio03"src="audio-resources/section4_the_island.mp3"></audio>
+
   </div>
-
-
-  <div class="introT">
-    <p>This soundwalk is meant to be experiened while walking along Iceland coastline--preferably a non-touristy one. </p>
-    <br>
-    <p>Press &nbsp;&nbsp; in each section to start audio.</p>
-    <br>
-    <p>Please wear headphones.</p>
-  </div>
-
-
-  <div class="credit">
-    <p>Created By: Yanran Bi</p>
-    <br><br><br>
-    <p>In Collaboration With:</p>
-    <p> <a href="https://wf.is/">Worldwide Friends</a></p>
-    <br><br><br>
-    <p>Spacial Thanks:</p>
-    <p>Yiming Huang</p>
-    <p><a href="https://yangqideng.com/">Yangqi Deng</a></p>
-  </div>
-
-  <!-- 1 -->
-  <img width="30"id="img00" src="image-resources/on.png" alt="" onclick="playMusic0()" >
-
-  <audio id="audio00"src="audio-resources/section1_water.mp3"></audio>
-
-
-  <!-- 2 -->
-  <img width="30"id="img01" src="image-resources/on.png" alt="" onclick="playMusic1()" >
-
-  <audio id="audio01"src="audio-resources/section2_the_hearts.mp3"></audio>
-
-
-  <!-- 3 -->
-  <img width="30"id="img02" src="image-resources/on.png" alt="" onclick="playMusic2()" >
-
-  <audio id="audio02"src="audio-resources/section3_ran_of_the_past.mp3"></audio>
-
-
-
-  <!-- 4 -->
-  <img width="30"id="img03" src="image-resources/on.png" alt="" onclick="playMusic3()" >
-
-  <audio id="audio03"src="audio-resources/section4_the_island.mp3"></audio>
-
 
 </body>
 
@@ -149,6 +150,9 @@ function playMusic3(){
 <style media="screen">
 body{
   margin:0px;
+  /* background-image:url('image-resources/ogk-bg-color.jpg'); */
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 
 a{
@@ -157,11 +161,12 @@ a{
 
 p{
   font-family:Monaco;
-  font-size:4vw;
+  font-size: 2.5vw;
 }
 
 .bg{
   margin:0px;
+  height: 1400vw;
 }
 
 
@@ -172,40 +177,40 @@ p{
 
 .introT{
   position:absolute;
-  top:360px;
-  left:70px;
+  top:60vw;
+  left:11vw;
 }
 
 
 .credit{
   position:absolute;
-  top:7300px;
-  left:150px;
+  top:1300vw;
+  left:30vw;
 }
 
 
 #img00{
   position:absolute;
-  top:1660px;
-  left:220px;
+  top:304vw;
+  left:40vw;
 }
 
 #img01{
   position:absolute;
-  top:2960px;
-  left:250px;
+  top:540vw;
+  left:45vw;
 }
 
 #img02{
   position:absolute;
-  top:3855px;
-  left:390px;
+  top:720vw;
+  left:60vw;
 }
 
 #img03{
   position:absolute;
-  top:5400px;
-  left:165px;
+  top:990vw;
+  left:29vw;
 }
 
 
