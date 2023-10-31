@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Only Glaciers Know</title>
+</head>
+<body>
+  <div class="bg">
+    <img src="image-resources/ogk-bg-color.png" alt=""class="responsive">
+  </div>
+
+
+  <div class="introT">
+    <p>This soundwalk is meant to be experiened while walking along Iceland coastline--preferably a non-touristy one. </p>
+    <br>
+    <p>Press &nbsp;&nbsp; in each section to start audio.</p>
+    <br>
+    <p>Please wear headphones.</p>
+  </div>
+
+
+  <div class="credit">
+    <p>Created By: Yanran Bi</p>
+    <br><br><br>
+    <p>In Collaboration With:</p>
+    <p> <a href="https://wf.is/">Worldwide Friends</a></p>
+    <br><br><br>
+    <p>Spacial Thanks:</p>
+    <p>Yiming Huang</p>
+    <p><a href="https://yangqideng.com/">Yangqi Deng</a></p>
+  </div>
+
+  <!-- 1 -->
+  <img width="30"id="img00" src="image-resources/on.png" alt="" onclick="playMusic0()" >
+
+  <audio id="audio00"src="audio-resources/section1_water.mp3"></audio>
+
+
+  <!-- 2 -->
+  <img width="30"id="img01" src="image-resources/on.png" alt="" onclick="playMusic1()" >
+
+  <audio id="audio01"src="audio-resources/section2_the_hearts.mp3"></audio>
+
+
+  <!-- 3 -->
+  <img width="30"id="img02" src="image-resources/on.png" alt="" onclick="playMusic2()" >
+
+  <audio id="audio02"src="audio-resources/section3_ran_of_the_past.mp3"></audio>
+
+
+
+  <!-- 4 -->
+  <img width="30"id="img03" src="image-resources/on.png" alt="" onclick="playMusic3()" >
+
+  <audio id="audio03"src="audio-resources/section4_the_island.mp3"></audio>
+
+
+</body>
+
+
+
+
+<script type="text/javascript">
+
+function playMusic0(){
+  var music = document.getElementById("audio00");
+
+  if(music.paused){
+    music.play();
+  }else{
+    music.pause ();
+    music.currentTime = 0;
+  }
+
+  var img_id = document.getElementById("img00");
+  if (img_id.src.match("image-resources/on.png")) {
+    img_id.src = "image-resources/off.png";
+  } else {
+    img_id.src = "image-resources/on.png";
+  }
+
+}
+
+
+function playMusic1(){
+  var music = document.getElementById("audio01");
+
+  if(music.paused){
+    music.play();
+  }else{
+    music.pause ();
+    music.currentTime = 0;
+  }
+
+  var img_id = document.getElementById("img01");
+  if (img_id.src.match("image-resources/on.png")) {
+    img_id.src = "image-resources/off.png";
+  } else {
+    img_id.src = "image-resources/on.png";
+  }
+
+}
+
+function playMusic2(){
+  var music = document.getElementById("audio02");
+
+  if(music.paused){
+    music.play();
+  }else{
+    music.pause ();
+    music.currentTime = 0;
+  }
+
+  var img_id = document.getElementById("img02");
+  if (img_id.src.match("image-resources/on.png")) {
+    img_id.src = "image-resources/off.png";
+  } else {
+    img_id.src = "image-resources/on.png";
+  }
+
+}
+
+
+function playMusic3(){
+  var music = document.getElementById("audio03");
+
+  if(music.paused){
+    music.play();
+  }else{
+    music.pause ();
+    music.currentTime = 0;
+  }
+
+  var img_id = document.getElementById("img03");
+  if (img_id.src.match("image-resources/on.png")) {
+    img_id.src = "image-resources/off.png";
+  } else {
+    img_id.src = "image-resources/on.png";
+  }
+
+}
+
+
+</script>
+
+
+
+
+<style media="screen">
+body{
+  margin:0px;
+}
+
+a{
+  color: black;
+}
+
+p{
+  font-family:Monaco;
+}
+
+.bg{
+  margin:0px;
+}
+
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.introT{
+  position:absolute;
+  top:360px;
+  left:70px;
+}
+
+
+.credit{
+  position:absolute;
+  top:7300px;
+  left:150px;
+}
+
+
+#img00{
+  position:absolute;
+  top:1660px;
+  left:220px;
+}
+
+#img01{
+  position:absolute;
+  top:2960px;
+  left:250px;
+}
+
+#img02{
+  position:absolute;
+  top:3855px;
+  left:390px;
+}
+
+#img03{
+  position:absolute;
+  top:5400px;
+  left:165px;
+}
+
+
+
+</style>
+
+
+
+
+
+
+</html>
