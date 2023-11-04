@@ -13,9 +13,14 @@
     <div class="introT">
       <p>This soundwalk is meant to be experiened while walking along Iceland coastline--preferably a non-touristy one. </p>
       <br>
-      <p>Press &nbsp<img width="30" src="image-resources/on.png" alt=""> in each section to start audio.</p>
+      <p>Press &nbsp<img width="20" src="image-resources/on.png" alt=""> in each section to start audio.</p>
       <br>
       <p>Please wear headphones.</p>
+    </div>
+
+
+    <div class="scroll_icon">
+      <img src="image-resources/scroll.png" alt="" width="30px">
     </div>
 
 
@@ -31,26 +36,26 @@
     </div>
 
     <!-- 1 -->
-    <img width=""id="img00" src="image-resources/on.png" alt="" onclick="playMusic0()" >
+    <img width=""id="img00" class="playB" src="image-resources/on.png" alt="" onclick="playMusic0()" >
 
     <audio id="audio00"src="audio-resources/section1_water.mp3"></audio>
 
 
     <!-- 2 -->
-    <img width=""id="img01" src="image-resources/on.png" alt="" onclick="playMusic1()" >
+    <img width=""id="img01"class="playB" src="image-resources/on.png" alt="" onclick="playMusic1()" >
 
     <audio id="audio01"src="audio-resources/section2_the_hearts.mp3"></audio>
 
 
     <!-- 3 -->
-    <img width=""id="img02" src="image-resources/on.png" alt="" onclick="playMusic2()" >
+    <img width=""id="img02" class="playB" src="image-resources/on.png" alt="" onclick="playMusic2()" >
 
     <audio id="audio02"src="audio-resources/section3_ran_of_the_past.mp3"></audio>
 
 
 
     <!-- 4 -->
-    <img width=""id="img03" src="image-resources/on.png" alt="" onclick="playMusic3()" >
+    <img width=""id="img03" class="playB" src="image-resources/on.png" alt="" onclick="playMusic3()" >
 
     <audio id="audio03"src="audio-resources/section4_the_island.mp3"></audio>
 
@@ -65,19 +70,36 @@
 
 function playMusic0(){
   var music = document.getElementById("audio00");
+  var other1 = document.getElementById("audio01");
+  var other2 = document.getElementById("audio02");
+  var other3 = document.getElementById("audio03");
 
   if(music.paused){
     music.play();
+    other1.pause();
+    other1.currentTime = 0;
+    other2.pause();
+    other2.currentTime = 0;
+    other3.pause();
+    other3.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
   }
 
   var img_id = document.getElementById("img00");
+  var img1 = document.getElementById("img01");
+  var img2 = document.getElementById("img02");
+  var img3 = document.getElementById("img03");
+
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
+    img1.src = "image-resources/on.png";
+    img2.src = "image-resources/on.png";
+    img3.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
+
   }
 
 }
@@ -85,36 +107,70 @@ function playMusic0(){
 
 function playMusic1(){
   var music = document.getElementById("audio01");
+  var other1 = document.getElementById("audio00");
+  var other2 = document.getElementById("audio02");
+  var other3 = document.getElementById("audio03");
 
   if(music.paused){
     music.play();
+    other1.pause();
+    other1.currentTime = 0;
+    other2.pause();
+    other2.currentTime = 0;
+    other3.pause();
+    other3.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
   }
 
   var img_id = document.getElementById("img01");
+  var img1 = document.getElementById("img00");
+  var img2 = document.getElementById("img02");
+  var img3 = document.getElementById("img03");
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
+    img1.src = "image-resources/on.png";
+    img2.src = "image-resources/on.png";
+    img3.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
 
 }
 
+
+
 function playMusic2(){
   var music = document.getElementById("audio02");
+  var other1 = document.getElementById("audio00");
+  var other2 = document.getElementById("audio01");
+  var other3 = document.getElementById("audio03");
+
 
   if(music.paused){
     music.play();
+    other1.pause();
+    other1.currentTime = 0;
+    other2.pause();
+    other2.currentTime = 0;
+    other3.pause();
+    other3.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
   }
 
   var img_id = document.getElementById("img02");
+  var img1 = document.getElementById("img00");
+  var img2 = document.getElementById("img01");
+  var img3 = document.getElementById("img03");
+
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
+    img1.src = "image-resources/on.png";
+    img2.src = "image-resources/on.png";
+    img3.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
@@ -124,17 +180,32 @@ function playMusic2(){
 
 function playMusic3(){
   var music = document.getElementById("audio03");
+  var other1 = document.getElementById("audio00");
+  var other2 = document.getElementById("audio01");
+  var other3 = document.getElementById("audio02");
 
   if(music.paused){
     music.play();
+    other1.pause();
+    other1.currentTime = 0;
+    other2.pause();
+    other2.currentTime = 0;
+    other3.pause();
+    other3.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
   }
 
   var img_id = document.getElementById("img03");
+  var img1 = document.getElementById("img00");
+  var img2 = document.getElementById("img01");
+  var img3 = document.getElementById("img02");
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
+    img1.src = "image-resources/on.png";
+    img2.src = "image-resources/on.png";
+    img3.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
@@ -189,6 +260,12 @@ p{
   left:30vw;
 }
 
+.playB{
+  /* align-items: center; */
+  animation-name:sizeC;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
 
 #img00{
   position:absolute;
@@ -212,6 +289,28 @@ p{
   position:absolute;
   top:990vw;
   left:29vw;
+}
+
+.scroll_icon{
+  position: absolute;
+  top: 130vw;
+  left: 10vw;
+  animation-name:transparency;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes transparency{
+  0% {opacity: 1;}
+  50% {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+@keyframes sizeC{
+  0% {transform: scale(1);}
+  50% {transform: scale(0.9);}
+  100% {transform: scale(1);}
 }
 
 
