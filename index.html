@@ -67,7 +67,26 @@
 
 
 <script type="text/javascript">
+//end by itself
+let endP00 = document.getElementById("audio00");
+endP00.onended = function(){
+  document.getElementById("img00").src= "image-resources/on.png";
+};
+let endP01 = document.getElementById("audio01");
+endP01.onended = function(){
+  document.getElementById("img01").src= "image-resources/on.png";
+};
+let endP02 = document.getElementById("audio02");
+endP02.onended = function(){
+  document.getElementById("img02").src= "image-resources/on.png";
+};
+let endP03 = document.getElementById("audio03");
+endP03.onended = function(){
+  document.getElementById("img03").src= "image-resources/on.png";
+};
 
+
+//user input
 function playMusic0(){
   var music = document.getElementById("audio00");
   var other1 = document.getElementById("audio01");
