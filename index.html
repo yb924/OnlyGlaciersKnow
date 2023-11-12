@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Only Glaciers Know</title>
 </head>
-<body style="background-image:url('image-resources/ogk-bg-color.png');">
+<body style="background-image:url('image-resources/ogk-final.png');">
   <div class="bg">
     <!-- <img src="image-resources/ogk-bg-color.png" alt=""class="responsive"> -->
 
@@ -61,6 +61,14 @@
 
   </div>
 
+
+  <!-- 4 -->
+  <img width=""id="img04" class="playB" src="image-resources/on.png" alt="" onclick="playMusic4()" >
+
+  <audio id="audio04" src="audio-resources/section5_this_walk.mp3"></audio>
+
+</div>
+
 </body>
 
 
@@ -85,6 +93,9 @@ document.getElementById('audio03').addEventListener("ended",function() {
   document.getElementById("img03").src= "image-resources/on.png";
 });
 
+document.getElementById('audio04').addEventListener("ended",function() {
+  document.getElementById("img04").src= "image-resources/on.png";
+});
 
 
 
@@ -95,6 +106,8 @@ function playMusic0(){
   var other1 = document.getElementById("audio01");
   var other2 = document.getElementById("audio02");
   var other3 = document.getElementById("audio03");
+  var other4 = document.getElementById("audio04");
+
 
   if(music.paused){
     music.play();
@@ -104,6 +117,8 @@ function playMusic0(){
     other2.currentTime = 0;
     other3.pause();
     other3.currentTime = 0;
+    other4.pause();
+    other4.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
@@ -113,12 +128,14 @@ function playMusic0(){
   var img1 = document.getElementById("img01");
   var img2 = document.getElementById("img02");
   var img3 = document.getElementById("img03");
+  var img4 = document.getElementById("img04");
 
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
     img1.src = "image-resources/on.png";
     img2.src = "image-resources/on.png";
     img3.src = "image-resources/on.png";
+    img4.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
 
@@ -132,6 +149,7 @@ function playMusic1(){
   var other1 = document.getElementById("audio00");
   var other2 = document.getElementById("audio02");
   var other3 = document.getElementById("audio03");
+  var other4 = document.getElementById("audio04");
 
   if(music.paused){
     music.play();
@@ -141,6 +159,8 @@ function playMusic1(){
     other2.currentTime = 0;
     other3.pause();
     other3.currentTime = 0;
+    other4.pause();
+    other4.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
@@ -150,11 +170,14 @@ function playMusic1(){
   var img1 = document.getElementById("img00");
   var img2 = document.getElementById("img02");
   var img3 = document.getElementById("img03");
+  var img4 = document.getElementById("img04");
+
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
     img1.src = "image-resources/on.png";
     img2.src = "image-resources/on.png";
     img3.src = "image-resources/on.png";
+    img4.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
@@ -168,6 +191,7 @@ function playMusic2(){
   var other1 = document.getElementById("audio00");
   var other2 = document.getElementById("audio01");
   var other3 = document.getElementById("audio03");
+  var other4 = document.getElementById("audio04");
 
 
   if(music.paused){
@@ -178,6 +202,8 @@ function playMusic2(){
     other2.currentTime = 0;
     other3.pause();
     other3.currentTime = 0;
+    other4.pause();
+    other4.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
@@ -187,12 +213,14 @@ function playMusic2(){
   var img1 = document.getElementById("img00");
   var img2 = document.getElementById("img01");
   var img3 = document.getElementById("img03");
+  var img4 = document.getElementById("img04");
 
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
     img1.src = "image-resources/on.png";
     img2.src = "image-resources/on.png";
     img3.src = "image-resources/on.png";
+    img4.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
@@ -205,6 +233,7 @@ function playMusic3(){
   var other1 = document.getElementById("audio00");
   var other2 = document.getElementById("audio01");
   var other3 = document.getElementById("audio02");
+  var other4 = document.getElementById("audio04");
 
   if(music.paused){
     music.play();
@@ -214,6 +243,8 @@ function playMusic3(){
     other2.currentTime = 0;
     other3.pause();
     other3.currentTime = 0;
+    other4.pause();
+    other4.currentTime = 0;
   }else{
     music.pause ();
     music.currentTime = 0;
@@ -223,11 +254,55 @@ function playMusic3(){
   var img1 = document.getElementById("img00");
   var img2 = document.getElementById("img01");
   var img3 = document.getElementById("img02");
+  var img4 = document.getElementById("img04");
+
   if (img_id.src.match("image-resources/on.png")) {
     img_id.src = "image-resources/off.png";
     img1.src = "image-resources/on.png";
     img2.src = "image-resources/on.png";
     img3.src = "image-resources/on.png";
+    img4.src = "image-resources/on.png";
+  } else {
+    img_id.src = "image-resources/on.png";
+  }
+
+}
+
+
+function playMusic4(){
+  var music = document.getElementById("audio04");
+  var other1 = document.getElementById("audio00");
+  var other2 = document.getElementById("audio01");
+  var other3 = document.getElementById("audio02");
+  var other4 = document.getElementById("audio03");
+
+  if(music.paused){
+    music.play();
+    other1.pause();
+    other1.currentTime = 0;
+    other2.pause();
+    other2.currentTime = 0;
+    other3.pause();
+    other3.currentTime = 0;
+    other4.pause();
+    other4.currentTime = 0;
+  }else{
+    music.pause ();
+    music.currentTime = 0;
+  }
+
+  var img_id = document.getElementById("img04");
+  var img1 = document.getElementById("img00");
+  var img2 = document.getElementById("img01");
+  var img3 = document.getElementById("img02");
+  var img4 = document.getElementById("img03");
+
+  if (img_id.src.match("image-resources/on.png")) {
+    img_id.src = "image-resources/off.png";
+    img1.src = "image-resources/on.png";
+    img2.src = "image-resources/on.png";
+    img3.src = "image-resources/on.png";
+    img4.src = "image-resources/on.png";
   } else {
     img_id.src = "image-resources/on.png";
   }
@@ -249,12 +324,14 @@ body{
 }
 
 a{
-  color: black;
+  color:rgba(0, 0, 0, 0.8);
 }
 
 p{
   font-family:Monaco;
   font-size: 3.5vw;
+  opacity: 0.8;
+  color:rgba(0, 0, 0, 0.8);
 }
 
 .bg{
@@ -310,6 +387,12 @@ p{
 #img03{
   position:absolute;
   top:990vw;
+  left:29vw;
+}
+
+#img04{
+  position:absolute;
+  top:1185vw;
   left:29vw;
 }
 
