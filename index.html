@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Only Glaciers Know</title>
 </head>
-<body style="background-image:url('image-resources/ogk-final.png');">
+<body style="">
   <div class="bg">
     <!-- <img src="image-resources/ogk-bg-color.png" alt=""class="responsive"> -->
 
@@ -12,9 +12,9 @@
 
     <div class="introT">
       <p>This soundwalk is meant to be experiened while walking along Iceland coastline--preferably a non-touristy one. </p>
-      <br>
-      <p>Press &nbsp<img width="30" src="image-resources/on.png" alt=""> in each section to start audio.</p>
-      <br>
+      <br class="nob">
+      <p>Press &nbsp<img id="press_intro" src="image-resources/on.png" alt=""> in each section to start audio.</p>
+      <br class="nob">
       <p>Please wear headphones.</p>
     </div>
 
@@ -26,10 +26,10 @@
 
     <div class="credit">
       <p>Created By: <a href="https://yanranbi.com/">Yanran Bi</a></p>
-      <br><br><br>
+      <br><br class="nob"><br class="nob">
       <p>In Collaboration With:</p>
       <p> <a href="https://wf.is/">Worldwide Friends</a></p>
-      <br><br><br>
+      <br><br class="nob"><br class="nob">
       <p>Special Thanks:</p>
       <p><a href="https://yh2371.github.io/">Yiming Huang</a></p>
       <p><a href="https://yangqideng.com/">Yangqi Deng</a></p>
@@ -316,48 +316,186 @@ function playMusic4(){
 
 
 <style media="screen">
-body{
-  margin:0px;
-  /* background-image:url('image-resources/ogk-bg-color.jpg'); */
-  background-repeat: no-repeat;
-  background-size:cover;
+
+@media only screen and (min-width: 1001px) {
+  body{
+    /* background-image:url('image-resources/ogk-bg-color.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('image-resources/iceland-computer.png');
+  }
+
+  a{
+    color:rgba(0, 0, 0, 0.8);
+  }
+
+  p{
+    font-family:Monaco;
+    font-size: 1vw;
+    opacity: 0.8;
+    color:rgba(0, 0, 0, 0.8);
+  }
+
+  .nob{
+    display: none;
+  }
+
+  .introT{
+    position:absolute;
+    width: 40vw;
+    top:16vw;
+    left:10vw;
+    padding-right: 2vw;
+  }
+
+  #press_intro{
+    width:20px;
+  }
+
+
+  .credit{
+    position:absolute;
+    top:29vw;
+    left:10vw;
+  }
+
+
+  #img00{
+    position:absolute;
+    width: 2vw;
+    top:10.5vw;
+    left:85vw;
+  }
+
+  #img01{
+    position:absolute;
+    width: 2vw;
+    top:19vw;
+    left:85vw;
+  }
+
+  #img02{
+    position:absolute;
+    width: 2vw;
+    top:27.5vw;
+    left:85vw;
+  }
+
+  #img03{
+    position:absolute;
+    width: 2vw;
+    top:36vw;
+    left:85vw;
+  }
+
+  #img04{
+    position:absolute;
+    width: 2vw;
+    top:44.5vw;
+    left:85vw;
+  }
+
+  .scroll_icon{
+    display: none;
+  }
+
+
+
 }
 
-a{
-  color:rgba(0, 0, 0, 0.8);
+@media only screen and (max-width: 1000px) {
+
+  body{
+    margin:0px;
+    /* background-image:url('image-resources/ogk-bg-color.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('image-resources/ogk-final.png');
+  }
+
+  a{
+    color:rgba(0, 0, 0, 0.8);
+  }
+
+  p{
+    font-family:Monaco;
+    font-size: 3.5vw;
+    opacity: 0.8;
+    color:rgba(0, 0, 0, 0.8);
+  }
+
+  .bg{
+    margin:0px;
+    height: 1450vw;
+  }
+
+
+  .responsive {
+    width: 100%;
+    height: auto;
+  }
+
+  .introT{
+    position:absolute;
+    top:65vw;
+    left:11vw;
+    padding-right: 5vw;
+  }
+
+  #press_intro{
+    width:15px;
+  }
+
+  .credit{
+    position:absolute;
+    top:1330vw;
+    left:30vw;
+  }
+
+
+  #img00{
+    position:absolute;
+    top:303vw;
+    left:40vw;
+  }
+
+  #img01{
+    position:absolute;
+    top:540vw;
+    left:45vw;
+  }
+
+  #img02{
+    position:absolute;
+    top:720vw;
+    left:60vw;
+  }
+
+  #img03{
+    position:absolute;
+    top:990vw;
+    left:29vw;
+  }
+
+  #img04{
+    position:absolute;
+    top:1185vw;
+    left:29vw;
+  }
+
+  .scroll_icon{
+    position: absolute;
+    top: 130vw;
+    left: 10vw;
+    animation-name:transparency;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+
+
+
 }
 
-p{
-  font-family:Monaco;
-  font-size: 3.5vw;
-  opacity: 0.8;
-  color:rgba(0, 0, 0, 0.8);
-}
-
-.bg{
-  margin:0px;
-  height: 1450vw;
-}
-
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-.introT{
-  position:absolute;
-  top:65vw;
-  left:11vw;
-  padding-right: 5vw;
-}
-
-
-.credit{
-  position:absolute;
-  top:1330vw;
-  left:30vw;
-}
 
 .playB{
   align-items: center;
@@ -365,46 +503,6 @@ p{
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
-
-#img00{
-  position:absolute;
-  top:303vw;
-  left:40vw;
-}
-
-#img01{
-  position:absolute;
-  top:540vw;
-  left:45vw;
-}
-
-#img02{
-  position:absolute;
-  top:720vw;
-  left:60vw;
-}
-
-#img03{
-  position:absolute;
-  top:990vw;
-  left:29vw;
-}
-
-#img04{
-  position:absolute;
-  top:1185vw;
-  left:29vw;
-}
-
-.scroll_icon{
-  position: absolute;
-  top: 130vw;
-  left: 10vw;
-  animation-name:transparency;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
 
 @keyframes transparency{
   0% {opacity: 1;}
@@ -417,6 +515,7 @@ p{
   50% {transform: scale(0.9);}
   100% {transform: scale(1);}
 }
+
 
 
 
